@@ -93,10 +93,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf
 
-# Browser
-PRODUCT_PACKAGES += \
-    Gello
-
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8952 \
@@ -226,6 +222,10 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     ueventd.qcom.rc
+
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_xiaomi
 
 # Sensors
 PRODUCT_PACKAGES += \
